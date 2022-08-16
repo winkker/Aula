@@ -6,31 +6,30 @@ public class DesafioDataTeste {
 
     public static void main(String[] args) {
 
-        var dataPaulo = new DesafioData();
-        var dataLaura = new DesafioData();
+        var data1 = new DesafioData();
+        var data2 = new DesafioData();
 
         Scanner scan = new Scanner(System.in);
 
-        //Recebe data Paulo
-        System.out.println("Digite o dia de nascimento de Paulo");
-        dataPaulo.dia = scan.nextInt();
-        System.out.println("Digite o mes de nascimento de Paulo");
-        dataPaulo.mes = scan.nextInt();
-        System.out.println("Digite o ano de nascimento de Paulo");
-        dataPaulo.ano = scan.nextInt();
-        //Recebe data Laura
-        System.out.println("Digite o dia de nascimento de Laura");
-        dataLaura.dia = scan.nextInt();
-        System.out.println("Digite o mes de nascimento de Laura");
-        dataLaura.mes = scan.nextInt();
-        System.out.println("Digite o ano de nascimento de Laura");
-        dataLaura.ano = scan.nextInt();
+        //Recebe data 1
+        System.out.println("Digite o dia ");
+        data1.dia = scan.nextInt();
+        System.out.println("Digite o mes ");
+        data1.mes = scan.nextInt();
+        System.out.println("Digite o ano ");
+        data1.ano = scan.nextInt();
+        //Recebe data 2
+        System.out.println("Digite o dia ");
+        data2.dia = scan.nextInt();
+        System.out.println("Digite o mes ");
+        data2.mes = scan.nextInt();
+        System.out.println("Digite o ano ");
+        data2.ano = scan.nextInt();
 
 
 
-        System.out.printf("Paulo nasceu %d/%d/%d e laura nasceu %d/%d/%d",
-                dataPaulo.dia, dataPaulo.mes, dataPaulo.ano, dataLaura.dia,
-                dataLaura.mes, dataLaura.ano);
+        System.out.printf("Paulo nasceu %s e Laura nasceu %s",
+                data1.dataFormatada(), data2.dataFormatada());
 
 
 
