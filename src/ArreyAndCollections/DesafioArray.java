@@ -8,7 +8,7 @@ public class DesafioArray {
 
 //      Declaração de variaveis
         var scan = new Scanner(System.in);
-        int numeroDeNotas = 0;
+        int numeroDeNotas;
         double total = 0;
 //      declaração do array
         System.out.println("Quantas notas deseja colocar? ");
@@ -27,8 +27,8 @@ public class DesafioArray {
             total = total + nota;
 
         }
-
-        System.out.println("A media do aluno é: " + total / notas.length);
+        double media = total / numeroDeNotas;
+        System.out.printf("A media do aluno é: %.2f", media);
     }
 
 
